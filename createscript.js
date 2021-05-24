@@ -42,11 +42,16 @@ function chooseClick(event){
 	document.getElementById("popup-container").style.display = "none";
 }
 
+
 function submitClick(event){
 	var artist = prompt("Enter a title and/or artist name to submit to the gallery:", "Jane Doe");
 	if (box == null || box ==""){
 		artist = "Anonymous";
 	}
+	document.getElementById("artist").value = artist;
+	document.getElementById("tablesub").value = document.getElementById("pixel-table");
+	document.getElementById("hidden-submit").click();
+	
 }
 
 //pixel canvas
