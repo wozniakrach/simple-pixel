@@ -325,3 +325,8 @@ footer a {
   opacity: 1;
   overflow: visible;
 }
+
+.hidden-form {
+  display: none;
+}
+  
