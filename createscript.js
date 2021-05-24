@@ -45,7 +45,7 @@ function chooseClick(event){
 
 function submitClick(event){
 	var artist = prompt("Enter a title and/or artist name to submit to the gallery:", "Jane Doe");
-	if (box == null || box ==""){
+	if (artist == null || artist ==""){
 		artist = "Anonymous";
 	}
 	document.getElementById("artist").value = artist;
