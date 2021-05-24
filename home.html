@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="UTF-8">
+	<title>pixel home</title>
+	<link rel="stylesheet" href="./pixelstyle.css" type="text/css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=VT323">
+  </head>
+  <body>
+	<div class="navigation">
+		<ul>
+			<li><a href="home" class="active">HOME</a></li>
+			<li style="float:right"><a href="create">CREATE</a></li>
+			<li><a href="gallery">GALLERY</a></li>
+			<li><a href="about">ABOUT</a></li>
+		</ul>
+	</div>
+	<div class="carousel">
+		<h1>WELCOME TO SIMPLE PIXEL :)</h1>
+  		<img class="slide" src="./pic1.png">
+		<img class="slide" src="./pic2.png">
+		<img class="slide" src="./pic3.png">
+		<div class="carousel-left" onclick="carouselRotate(-1)">&#10094;</div>
+		<div class="carousel-right" onclick="carouselRotate(1)">&#10095;</div>
+	</div>
+	<div class="intro">
+		<h3 class="create" id="create" href="create">CREATE!</h3>
+		<p>Make your own pixel art using the create page! Clicking or moving over a pixel while holding the mouse down will color the pixel. Use the palette on the left to change colors and the buttons at the bottom for other functions.</p>
+		<ul id="function-explanations">
+			<li>Download: This button will download your current canvas.</li>
+			<li>Add Color: Select this to choose a new color to add to the palette.</li>
+			<li>Submit: Submit your current canvas to (potentially) be added to the gallery! You can enter an optional title and/or artist name. (By using this button you give permission for any art on the current canvas to be displayed on this site.)</li>
+		</ul>
+		<p>To view more art created with this site, check out the <a href="gallery">gallery</a>. To submit feedback or learn more, see the <a href="about">about</a> page.</p>
+	</div>
+	<footer>
+		<p>site created by Rachel Wozniak for CS290 | <a href="mailto:wozniakr@oregonstate.edu">wozniakr@oregonstate.edu</a> | see the <a href="about">about</a> page for info about additional resources used</p>
+	</footer>
+
+	<script src="./homescript.js"></script>
+  </body>
+</html>

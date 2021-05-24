@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="UTF-8">
+	<title>pixel cReAtE</title>
+	<link rel="stylesheet" href="./pixelstyle.css" type="text/css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=VT323">
+  </head>
+  <body>
+	<div class="navigation">
+		<ul>
+			<li><a href="home">HOME</a></li>
+			<li style="float:right"><a href="create" class="active">CREATE</a></li>
+			<li><a href="gallery">GALLERY</a></li>
+			<li><a href="about">ABOUT</a></li>
+		</ul>
+	</div>
+    	<div class="canvas">
+    		<table class="canvas-table" id="pixel-table">
+			<caption data-html2canvas-ignore="data-html2canvas-ignore"><ul class="create-options">
+				<li><button id="current-color" class="color">COLOR</button></li>
+				<li><button class="erase" onclick="eraseClick()">ERASE</button></li>
+				<li><button class="download" onclick="downloadClick()">DOWNLOAD</button>
+				<li><button class="add-color" onclick="addcolorClick()">ADD COLOR</button>
+				<div class="popup-container" id="popup-container">							
+					<fieldset class="popup">
+						<span class="close" onclick="closeClick()">&times;</span>
+						<input type="color" id="choosecolor" value="#000000" style="position: relative; bottom: 5px; left: 1vw">
+						<button class="choose" style="background-color: black; border-radius: 4px; font-size: 1.5vw; height: 2vw" onclick="chooseClick()">ADD COLOR</button>
+					</fieldset>
+				</div>
+				</li>
+				<li><button class="submit" onclick="submitClick()">SUBMIT</button></li>
+			</ul></caption>
+      		</table>  
+		<div class="palette">
+			<ul id="color-list">
+				<li class="palette-color" hex="#000000"></li>
+				<li class="palette-color" hex="#29FFD7"></li>
+				<li class="palette-color" hex="#BC55A9"></li>
+				<li class="palette-color" hex="#FE5F55"></li>
+				<li class="palette-color" hex="#FFC640"></li>
+				<li class="palette-color" hex="#D4EC4D"></li>
+			</ul>
+		</div>				
+	</div>
+	
+	<script src="./createscript.js"></script>
+	<script src="./html2canvas.min.js"></script>
+  </body>
+</html>
