@@ -43,17 +43,6 @@ function chooseClick(event){
 }
 
 
-function submitClick(event){
-	var artist = prompt("Enter a title and/or artist name to submit to the gallery:", "Jane Doe");
-	if (artist == null || artist ==""){
-		artist = "Anonymous";
-	}
-	document.getElementById("artist").value = artist;
-	document.getElementById("tablesub").value = document.getElementById("pixel-table");
-	document.getElementById("hidden-submit").click();
-	
-}
-
 //pixel canvas
 var table = document.getElementById("pixel-table");
 var i = 0;

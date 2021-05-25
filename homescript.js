@@ -1,7 +1,7 @@
 var carouselIndex = 0;
 autoSlides();
 
-function carouselRotate(n=1) {
+function carouselRotate(n) {
 	carouselIndex+=n;
 	showSlides(carouselIndex);
 }

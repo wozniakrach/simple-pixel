@@ -79,6 +79,7 @@ footer {
   color: #FFC640;
   font-size: 16px;
   font-family: 'VT323', sans-serif;
+  width: 100%
 }
 
 footer a {
@@ -190,16 +191,6 @@ footer a {
 .add-color:hover {
   border-color: #FE5F55;
   background-color: #FE5F55;
-  color: #FAF5E4;
-}
-
-.submit {
-  color: #BC55A9;
-}
-
-.submit:hover {
-  border-color: #BC55A9;
-  background-color: #BC55A9;
   color: #FAF5E4;
 }
 
@@ -326,7 +317,27 @@ footer a {
   overflow: visible;
 }
 
-.hidden-form {
-  display: none;
+.about-content{
+  position: relative;
+  top: 4vw;
+  padding: 2vw;
 }
-  
+
+.about-content ul{
+  list-style-type: square;
+}
+
+.about-content p, li, fieldset, form, label{
+  font-family: 'VT323', sans-serif;
+  font-size: 1.5em;
+}
+
+.about-content a{
+  color: #BC55A9;
+}
+
+.about-foot {
+  position: fixed;
+  bottom: 0;
+ }
+

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="UTF-8">
+	<title>pixel about</title>
+	<link rel="stylesheet" href="./pixelstyle.css" type="text/css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=VT323">
+  </head>
+  <body>
+	<div class="navigation">
+		<ul>
+			<li><a href="home.html">HOME</a></li>
+			<li style="float:right"><a href="create.html">CREATE</a></li>
+			<li><a href="gallery.html">GALLERY</a></li>
+			<li><a href="about.html" class="active">ABOUT</a></li>
+		</ul>
+	</div>
+	<div class="about-content">
+	<h1>About Simple Pixel</h1>
+	<p>Simple pixel was in part inspired by the lovely Hannah Zahn, who creates pixel art of a much higher quality than this site is capable of :) You can check out her art <a href=https://artizahnstore.com>here</a>.</p>
+	<p>Other resources used include:</p>
+	<ul>
+		<li><a href=https://html2canvas.hertzen.com>html2canvas</a>: supports screenshooting canvas for image download</li>
+		<li><a href=https://pages.github.com/>GitHub pages</a>: host for site</li>
+		<li><a href=https://fonts.google.com/>Google Fonts</a>: source for font used ('VT323')</li>
+		<li><a href=https://www.w3schools.com/>w3schools</a>: used for help with creating elements like carousel</li>
+	</ul>
+	<p>This site was created as a final project for CS290 at OSU. Thank you to all of the instructors and ULAs!</p>
+	<fieldset>
+		<legend>Submit Feedback!</legend>
+		<label for="name">Name:</label>
+		<input type="text" id="name">
+		<label for="comments">Comments/Suggestions:</label>
+		<input type="text" id="comments">
+		<input type="submit" id="feedback-submit">
+	</fieldset>
+	<p>(Form submits to htttpbin; no feedback from this form will actually be viewed :))</p>
+	<p id="request-status"></p>
+	</div>
+	<footer class="about-foot">
+		<p>site created by Rachel Wozniak for CS290 | <a href="mailto:wozniakr@oregonstate.edu">wozniakr@oregonstate.edu</a> | see the <a href="about.html">about</a> page for info about additional resources used</p>
+	</footer>
+	<script src="./aboutscript.js"></script>
+	</body>
+</html>
