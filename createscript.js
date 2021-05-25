@@ -39,6 +39,7 @@ function chooseClick(event){
 	newColor.style.backgroundColor = newColor.getAttribute("hex");
 	newColor.addEventListener("click", changeColor);
 	document.getElementById("color-list").appendChild(newColor);
+	newColor.click();
 	document.getElementById("popup-container").style.display = "none";
 }
 
